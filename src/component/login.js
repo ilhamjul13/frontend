@@ -16,7 +16,7 @@ const LoginForm = () => {
     };
 
     try {
-      const response = await axios.post("http://localhost:3001/api/login", loginData);
+      const response = await axios.post("https://backend-eta-beige.vercel.app/api/login", loginData);
       const { token } = response.data;
 
       // Store the token in local storage

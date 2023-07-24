@@ -109,7 +109,7 @@ export default App;
 async function createMenu(menuData) {
   try {
     const token = localStorage.getItem("token");
-    const response = await fetch("http://localhost:3001/menu", {
+    const response = await fetch("https://backend-eta-beige.vercel.app/menu", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -128,7 +128,7 @@ async function createMenu(menuData) {
 async function getAllMenus() {
   try {
     const token = localStorage.getItem("token");
-    const response = await fetch("http://localhost:3001/menu", {
+    const response = await fetch("https://backend-eta-beige.vercel.app/menu", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -145,7 +145,7 @@ async function getAllMenus() {
 async function updateMenu(menuId, updateData) {
   try {
     const token = localStorage.getItem("token");
-    const response = await fetch(`http://localhost:3001/menu/${menuId}`, {
+    const response = await fetch(`https://backend-eta-beige.vercel.app/menu/${menuId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -165,7 +165,7 @@ async function updateMenu(menuId, updateData) {
 async function deleteMenu(menuId) {
   try {
     const token = localStorage.getItem("token");
-    const response = await fetch(`http://localhost:3001/menu/${menuId}`, {
+    const response = await fetch(`https://backend-eta-beige.vercel.app/menu/${menuId}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,

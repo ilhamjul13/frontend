@@ -11,7 +11,7 @@ const RegisterForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3001/register", { username, password });
+      const response = await axios.post("https://backend-eta-beige.vercel.app/register", { username, password });
       console.log(response.data); // You can handle the response data as needed
       setError("");
     } catch (error) {
