@@ -1,0 +1,174 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 32px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container button {
+  display: block;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.table-container {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.table-container th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+.table-container td {
+  text-align: center;
+}
+
+.table-container button {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-container button:hover {
+  background-color: #555;
+}
+
+/* Custom styling for menu */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.form-container {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.form-container input[type="text"] {
+  padding: 12px;
+}
+
+.form-container button {
+  padding: 12px 24px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-container table {
+  min-width: 600px;
+}
+
+.table-container th,
+.table-container td {
+  white-space: nowrap;
+}
+
+.table-container td {
+  text-align: left;
+}
+
+.table-container button {
+  padding: 8px 16px;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .table-container {
+    overflow-x: auto;
+    width: auto;
+  }
+
+  .table-container table {
+    min-width: 100%;
+  }
+}
+
+.delete {
+  background-color: red;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+
+}
+
